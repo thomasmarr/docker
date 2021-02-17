@@ -8,7 +8,7 @@ import { baseStyles } from '../styles/GlobalStyles';
 
 class ThemeProvider extends React.Component {
   state = {
-    isDarkThemeActive: true,
+    isDarkThemeActive: false,
   };
 
   componentDidMount() {
