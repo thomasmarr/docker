@@ -7,7 +7,10 @@ metaDescription: "Containers & Virtualization Fundamentals"
 The fundamentals section covers the following topics:
 
 ## Virtualisation
-What is virtualisation, why did it come about, what is it good for and what are the challenges?
+What is virtualisation?
+
+## Why Virtualise?
+Why do we do it?
 
 ## Virtualisation Technologies
 What types of virtualisation are on the market, and what are they typically used for?
