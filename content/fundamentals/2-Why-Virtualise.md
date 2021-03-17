@@ -2,15 +2,19 @@
 title: "Why Virtualise?"
 ---
 
+Virtualisation technologies help optimise use of compute resources.
+
 # Resource Utilisation
 
 Arguably the primary reason for virtualisation is to try to use as much of the available hardware resource as possible. The idea is to go from something like this...
 
-![server resource use without virtualisation](/without_virtulisation.svg)
+![server resource use without virtualisation](/without_virtualisation.svg)
 
 to something like this...
 
-![server resource use with virtualisation](/with_virtulisation.svg)
+![server resource use with virtualisation](/with_virtualisation.svg)
+
+This is beneficial for those managing large physical hardware resource pools, for example on-premise datacentres or entire cloud service providers, as they can optimise utilisation, consolidate management, minimise energy, space used etc. It is also beneficial for the users of those resource pools, as they are able to be more specific with how much resource they need, and when they need it.
 
 # Partitioning / Isolation
 
