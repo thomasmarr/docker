@@ -2,11 +2,9 @@
 title: "Practical 1 - Write a Dockerfile, build an Image and run a Container"
 ---
 
-# Practical 1 - Write a Dockerfile, build a container image from it, and run it
-
 We are going to write a very basic Dockerfile which we can build an image from, and then run a container from that image which executes some javascript code.
 
-### Source code
+# Source code
 ---
 
 Create a directory somewhere on your machine. Doesn't matter where, or what it's called. Create a file named `hello-world.js` in that directory with the below contents.
@@ -18,7 +16,7 @@ console.log('Hello, world!')
 
 This is pretty self explanatory. If you execute this javascript file (i.e. `node ./hello-world.js`) it'll spit out the 'Hello, world!' string to your terminal. You are going to copy this file into a docker image and run a container based on that image, which executes the file.
 
-### Write a Dockerfile
+# Write a Dockerfile
 ---
 
 Next, create a file called `Dockerfile` in the same directory, with the following contents:
@@ -35,7 +33,7 @@ The second line `COPY`s the `hello-world.js` file from the current working direc
 
 The third line is the command (`CMD`) which will be run whenever a container is started based on the image. There is more than one way to specfiy this. The `CMD ["executable", "and", "params"]` format is used here. More on the alternatives later.
 
-### Build a container image
+# Build a container image
 ---
 
 Now you have the Dockerfile. That defines how to build an image, but you haven't *built* the image yet. To build it, (from the same directory) run the following command.
@@ -107,7 +105,7 @@ REPOSITORY                       TAG                 IMAGE ID            CREATED
 hello-world                      latest              849dc92d9df4        7 seconds ago       937MB
 ```
 
-### Run the container
+# Run the container
 ---
 
 Now that we have the image, the last thing to do is `run` it.
@@ -152,7 +150,7 @@ CONTAINER ID        IMAGE                    COMMAND                  CREATED   
 172d332aa8ad        hello-world              "docker-entrypoint.s…"   About an hour ago   Exited (0) About an hour ago                              hw-container
 ```
 
-### Cleanup
+# Cleanup
 ---
 
 You now have the following items on your system:
