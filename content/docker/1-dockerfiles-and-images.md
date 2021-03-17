@@ -1,3 +1,0 @@
----
-title: "Dockerfiles and Images"
----
