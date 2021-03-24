@@ -193,6 +193,12 @@ app.get('/mountedfile', (req, res) => {
 })
 ```
 
+After updating the application source code, you will need to rebuild the image, so that the image contains the latest changes.
+
+```bash
+$ docker build -t express-app .
+```
+
 Create a directory on your host file system named e.g. `data`, and add a text file.
 
 ```bash
